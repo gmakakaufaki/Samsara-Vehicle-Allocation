@@ -1,0 +1,24 @@
+Samsara Vehicle Allocation to Job
+
+Job truck charges are allocated from overhead to specific jobs based on the Samsara GPS on-site location. 
+
+Time-on-Site reports are downloaded by month per job within Samsara. These reports are combined and used to allocate a percentage, up to 100%, of the truck’s costs.
+
+
+Reports needed to support completion:
+1.	JC Detail – Used to gather the percentage used to allocate repairs and maintenance total costs 
+i.	Job – 1OH
+ii.	Phases: 31.    .
+2.	JC Jobs – used to gather the job names for the report
+3.	EM Equipment List – used to get the vehicle type by asset ID
+4.	Master Auto List – Used to pull the current driver’s name
+5.	Samsara Fuel and Energy Report – Used to calculate the assets fuel total
+
+
+Billing Allocation Methodology
+Days in a month = 21 days
+Truck billing allocation is based on:
+1.	If the truck is at 4 or more jobs, the total is allocated to Overhead.
+2.	When a truck is at any job for 4 or more hours, it is counted as a full business day.
+3.	If the truck has been at any job for 15 or more business days > 100% allocation
+4.	Trucks that don’t meet the above criteria, allocation is a percentage of total business days on job divided by 21 days. 
