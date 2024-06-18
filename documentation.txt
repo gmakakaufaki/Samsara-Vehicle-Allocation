@@ -4,11 +4,16 @@ Job truck charges are allocated from overhead to specific jobs based on the Sams
 
 Time-on-Site reports are downloaded by month per job within Samsara. These reports are combined and used to allocate a percentage, up to 100%, of the truck’s costs.
 
+Python Code:
+    The file names are saved to folder. The file name needs to be truncated before running. Use rename_file script to rename the file
+    Update the output_folder_path and input_folder_path before running
+    After the file is created, notify Brittany Moreno to complete with invoices
+
 
 Reports needed to support completion:
 1.	JC Detail – Used to gather the percentage used to allocate repairs and maintenance total costs 
-i.	Job – 1OH
-ii.	Phases: 31.    .
+        i.	Job – 1OH
+        ii.	Phases: 31.    .
 2.	JC Jobs – used to gather the job names for the report
 3.	EM Equipment List – used to get the vehicle type by asset ID
 4.	Master Auto List – Used to pull the current driver’s name
@@ -17,6 +22,7 @@ ii.	Phases: 31.    .
 
 Billing Allocation Methodology
 Days in a month = 21 days
+
 Truck billing allocation is based on:
 1.	If the truck is at 4 or more jobs, the total is allocated to Overhead.
 2.	When a truck is at any job for 4 or more hours, it is counted as a full business day.
